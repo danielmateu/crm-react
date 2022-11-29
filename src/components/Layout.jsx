@@ -36,10 +36,3 @@ export default Layout
 
 
 
-// let ciudad = 'Barcelona';
-//     let distrito = 'Ciutat Vella';
-//     let cp = '08001';
-
-//     const resp = `El CP del distrito de ${distrito} de la ciudad de ${ciudad} es el ${cp}`
-
-//     console.log(resp)

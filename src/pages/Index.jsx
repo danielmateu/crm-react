@@ -2,7 +2,6 @@ import { useLoaderData } from "react-router-dom";
 import Cliente from "../components/Cliente";
 
 
-
 export const loader = () => {
 
   const clientes = [
