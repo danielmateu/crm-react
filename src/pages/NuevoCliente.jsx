@@ -1,9 +1,21 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Form } from 'react-router-dom'
 import Formulario from '../components/Formulario'
+
+
+export async function action ({request})  {
+    
+    const formData = await request.formData();
+    console.log([...formData]);
+
+    const datos = Object.fromEntries(formData);
+    console.log({datos});
+
+}
 
 const NuevoCliente = () => {
 
     const navigate = useNavigate()
+
     return (
         <>
             <h1 className="font-black text-4xl text-blue-900">Nuevo Cliente</h1>
@@ -17,10 +29,12 @@ const NuevoCliente = () => {
                 </button>
             </div>
 
-            <div className="bg-white shadow hover:shadow-none ease-in duration-200 rounded-md md:w-3/4 mx-auto px-5 py-10">
+            <div className="bg-white shadow hover:shadow-none ease-in duration-200 rounded-md md:w-3/4 mx-auto px-5 py-10 my-10">
                 {/* <Formulario/> */}
 
-                <form action="" >
+                <Form 
+                    method="post"
+                    >
 
                     <Formulario />
 
@@ -29,7 +43,7 @@ const NuevoCliente = () => {
                         type="submit"
                         className="mt-5 w-full bg-blue-600 hover:bg-blue-400 font-bold text-white hover:text-gray-800 ease-in duration-200 rounded-md p-4" />
 
-                </form>
+                </Form>
             </div>
         </>
     )
