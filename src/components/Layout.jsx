@@ -2,7 +2,7 @@ import { Outlet, Link, useLocation } from "react-router-dom"
 
 
 
-function Layout() {
+export const Layout = () => {
 
     const location = useLocation();
 
@@ -32,7 +32,7 @@ function Layout() {
     )
 }
 
-export default Layout
+
 
 
 
