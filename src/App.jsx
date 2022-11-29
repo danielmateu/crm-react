@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <h1 className='text-6xl'>CRM - React - React Router DOM</h1>
+    <h1 className='text-6xl font-bold'>CRM - React - React Router DOM</h1>
   )
 }
 
