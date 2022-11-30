@@ -1,12 +1,12 @@
 
-
 export async function obtenerClientes() {
-
-    // const url = 'http://localhost:3000/clientes';
-
-    const resp = await fetch(import.meta.env.VITE_API_URL);
-    const res  = await resp.json();
-
-    return res;
-
-} 
+    try {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/clientes`) //? verifica si es clientes o clients
+        const result = await response.json()
+        console.log(result)
+        return result
+    } catch (error) {
+        console.log(error.message)
+        return []
+    }
+}
