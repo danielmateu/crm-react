@@ -5,8 +5,8 @@ import Cliente from "../components/Cliente";
 
 export const loader = () => {
 
-  // const clientes = obtenerClientes();
-  return obtenerClientes();
+  const clientes = obtenerClientes();
+  return clientes;
 }
 
 const Index = () => {
