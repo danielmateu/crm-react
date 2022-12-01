@@ -74,7 +74,7 @@ const NuevoCliente = () => {
                     <Formulario />
 
                     <input
-                        value='Resitrar cliente'
+                        value='Regitrar cliente'
                         type="submit"
                         className="mt-5 w-full bg-blue-600 hover:bg-blue-400 font-bold text-white hover:text-gray-800 ease-in duration-200 rounded-md p-4" />
 
